@@ -1,0 +1,128 @@
+1. Python Basics:
+   - What is Python, and what are some of its key features that make it popular among developers? Provide examples of use cases where Python is particularly effective.
+   Answ:
+   Python is a high-level interpreted programming language.
+   Some of its key features are;
+     a.It is free
+      b.It is easy to learn due its   syntax.
+   Use cases:
+     a.Task automation
+     b. Web development;building web applications
+     c. Processing of data
+
+2. Installing Python:
+   - Describe the steps to install Python on your operating system (Windows, macOS, or Linux). Include how to verify the installation and set up a virtual environment.
+Answer:
+Installation of python(windows); ON browser, visit python.org-->select python version(for windows)-->Download python executable installer-->Run executable installer-->Verify python was installed(in your terminal write the command'python --version)-->Install pip(python -m pip install Django)
+
+3. Python Syntax and Semantics:
+   - Write a simple Python program that prints "Hello, World!" to the console. Explain the basic syntax elements used in the program.
+   Answer:
+   #Python code to print "Hello,World"
+   print("Hello, World")
+   "Hello World" is a string hence it is sandwiched in double quotes
+   print gives instrictions to the compiler on what to do i.e print
+
+4. Data Types and Variables:
+   - List and describe the basic data types in Python. Write a short script that demonstrates how to create and use variables of different data types.
+   Answer:
+   Integer-any number i.e 3,5,7,22345789
+   Float- any decimal number i.e 3.2, 5.9
+   String-any wording/text i.e names, sentences
+   Boolean-True/False i.e the output is either true or false
+   List- a collection of item i.e ["apple","banana","cherry"]
+
+ 5. Control Structures:
+   - Explain the use of conditional statements and loops in Python. Provide examples of an `if-else` statement and a `for` loop.
+Answer:
+ a.Conditional statements are used for selection;choosing between two or more items.
+ Loops are used for repetition;repeating a piece of code multiple times in a row.
+ b.If...else statement example;
+   #if..else statement
+   age=21
+   if age >18:
+   print("True")
+   else:
+   print("False")
+c.For loop example;
+  #For loop
+  for i in range(1,10):
+  print("I am Kenyan")
+
+6. Functions in Python:
+   - What are functions in Python, and why are they useful? Write a Python function that takes two arguments and returns their sum. Include an example of how to call this function.
+Answer:
+ a.Functions are a block of code which can only run when called i.e they return the specific task.
+ b.Functions are important in that they ease the writing of code;repeated tasks are put together to make a function such that instead of writing the same code repeatedly for different inputs, we can just call the function to reuse code contained in it.
+ c.Python function:
+   #An example of a python function taking two arguments and returns their sum
+   def add(x,y):
+    return x+y
+
+    result = add(10,9)
+    print(result)
+
+7. Lists and Dictionaries:
+   - Describe the differences between lists and dictionaries in Python. Write a script that creates a list of numbers and a dictionary with some key-value pairs, then demonstrates basic operations on both.
+   Answer:
+    a.Lists are a type of data structure containing an ordered collection of items and are mutable(elements can be searched,added,moved and deleted after creation) while dictionaries are unique and immutable objects that consist of key value pairs and are accessible through unique keys in the dictionary
+    b.Script that creates a list of numbers
+      #Lists of numbers
+      number_list = ['1','2','3','4','5']
+      index_of_3 = number_list.index('3')
+        print('The index of 3 in the list is:',index_of_3)
+    c.Dictionary with key value pairs
+       Dict = dict({1:' Power',2: 'Learn', 3: 'Project'})
+       print("\nDictionary with the use of dict():")
+       print(Dict)
+
+8. Exception Handling:
+   - What is exception handling in Python? Provide an example of how to use `try`, `except`, and `finally` blocks to handle errors in a Python script.
+ Answer:
+  a.Exception handling is the attribute in python that allows a program to continue to execute even if an error occurs.
+  b.Example of how to use 'try' block to handle errors
+   #Use of try in error handling
+   try:
+      numerator = 10
+      denominator = 0
+
+      result = numerator/denominator
+
+      print(result)
+   except:
+      print("Error:Denominator cannot be 0")
+
+   finally:
+      print("This is finally block")
+
+9. Modules and Packages:
+   - Explain the concepts of modules and packages in Python. How can you import and use a module in your script? Provide an example using the `math` module.
+Answer:
+ a. Both modules and packages      organize and structure code;a module is a single file containing python code whereas a package is a collection of modules that are organized in a directory hierachy.  
+ b. Example of 'math' module
+    #Euler's Number math module
+    import math
+      print (math.e) 
+
+10. File I/O:
+    - How do you read from and write to files in Python? Write a script that reads the content of a file and prints it to the console, and another script that writes a list of strings to a file.
+Answer:
+    a.You read from a file in python by using the commabd 'file.read()' or 'file.readline()' or 'file.readlines()'
+    b.To write to a file writelines() is used
+      #Python program to demonstrate writing to a file
+
+      #Opening a file
+      file1 = open('PLP.txt, 'w')
+      L = [&quot;I am Stella \n&quot;, &quot;I am a girl \n&quot;, &quot;I am Kenyan \n&quot;]
+      s = &quot;Hello\n&quot;
+
+      #Writing a string to file
+      file1.writelines(L)        
+
+SOURCES AND REFERENCES:
+   1.Built in
+   2.Power Learn Project notes
+   3.Simplilearn
+   4.Geeks for Geeks
+   5.Cristian,Flaviu (1980)"Exception Hamdlingand Software Fault Tolerance"
+   6.Programiz
